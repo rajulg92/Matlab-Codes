@@ -1,0 +1,21 @@
+clear all;
+clc;
+k=input('Enter th no of input mesage');
+n=input('Enter the no of bits in codeword');
+z=input('Enter the constriant length');
+m=input('Enter the input message');
+for i=1:n
+    for j=1:n
+    g(i,j)=input('Enter the generator polynomial')
+    c(i,j)=conv(m,g(i,j));
+    d(i,j)=rem(c(i,j),2);
+    ci=di';
+    end
+end
+for i=1:n
+    disp(ci);
+end
+
+    
+    
+
